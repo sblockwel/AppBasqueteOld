@@ -3,12 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AppBasquete.Data
 {
-    class AppDBContext : DbContext
+    public class AppDBContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=D:\mydb.db;");
+            optionsBuilder.UseMySql("Server=localhost;Database=Basquete;Uid=Dev;Pwd=123456;");
         }
         public virtual DbSet<Jogo> Jogos { get; set; }
+        public virtual DbSet<Jogador> Jogadores { get; set; }
     }
 }
