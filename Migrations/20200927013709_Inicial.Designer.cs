@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppBasquete.Migrations
 {
-    [DbContext(typeof(AppContext))]
+    [DbContext(typeof(AppDBContext))]
     [Migration("20200927013709_Inicial")]
     partial class Inicial
     {

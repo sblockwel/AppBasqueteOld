@@ -158,7 +158,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\AppContext.cs" />
+    <Compile Include="Data\AppDBContext.cs" />
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>

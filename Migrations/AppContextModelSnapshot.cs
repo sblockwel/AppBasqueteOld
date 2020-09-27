@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AppBasquete.Migrations
 {
-    [DbContext(typeof(AppContext))]
+    [DbContext(typeof(AppDBContext))]
     partial class AppContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

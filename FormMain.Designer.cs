@@ -40,6 +40,7 @@
             this.lblQuebraMin = new System.Windows.Forms.Label();
             this.txtQuebraMax = new System.Windows.Forms.TextBox();
             this.lblQuebraMax = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumero
@@ -151,11 +152,23 @@
             this.lblQuebraMax.TabIndex = 8;
             this.lblQuebraMax.Text = "Quebra de recorde máximo";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(353, 306);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(85, 38);
+            this.btnAdd.TabIndex = 12;
+            this.btnAdd.Text = "Adicionar";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 356);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtQuebraMin);
             this.Controls.Add(this.lblQuebraMin);
             this.Controls.Add(this.txtQuebraMax);
@@ -190,6 +203,7 @@
         private System.Windows.Forms.Label lblQuebraMin;
         private System.Windows.Forms.TextBox txtQuebraMax;
         private System.Windows.Forms.Label lblQuebraMax;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 

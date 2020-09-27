@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AppBasquete.Data
 {
-    class AppContext : DbContext
+    class AppDBContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
