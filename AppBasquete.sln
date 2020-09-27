@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppBasquete", "AppBasquete.csproj", "{5EBE909B-4D37-4E7B-B308-6C5E6C1A2CC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EBE909B-4D37-4E7B-B308-6C5E6C1A2CC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBE909B-4D37-4E7B-B308-6C5E6C1A2CC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBE909B-4D37-4E7B-B308-6C5E6C1A2CC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBE909B-4D37-4E7B-B308-6C5E6C1A2CC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42A8F129-649F-4402-93CD-EA4CBC54F259}
+	EndGlobalSection
+EndGlobal
