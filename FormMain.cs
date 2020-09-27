@@ -83,5 +83,11 @@ namespace AppBasquete
             }          
 
         }
+
+        private void btnVerTodos_Click(object sender, EventArgs e)
+        {
+            var form = new FormJogos();
+            form.Show();
+        }
     }
 }

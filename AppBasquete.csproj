@@ -159,6 +159,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\AppDBContext.cs" />
+    <Compile Include="FormJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJogos.Designer.cs">
+      <DependentUpon>FormJogos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     <Compile Include="Models\Jogo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormJogos.resx">
+      <DependentUpon>FormJogos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +195,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AppBasquete.Models.Jogo.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

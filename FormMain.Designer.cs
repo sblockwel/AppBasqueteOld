@@ -41,6 +41,7 @@
             this.txtQuebraMax = new System.Windows.Forms.TextBox();
             this.lblQuebraMax = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnVerTodos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNumero
@@ -163,11 +164,23 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnVerTodos
+            // 
+            this.btnVerTodos.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerTodos.Location = new System.Drawing.Point(246, 296);
+            this.btnVerTodos.Name = "btnVerTodos";
+            this.btnVerTodos.Size = new System.Drawing.Size(85, 48);
+            this.btnVerTodos.TabIndex = 13;
+            this.btnVerTodos.Text = "Ver Todos";
+            this.btnVerTodos.UseVisualStyleBackColor = true;
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 356);
+            this.Controls.Add(this.btnVerTodos);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtQuebraMin);
             this.Controls.Add(this.lblQuebraMin);
@@ -204,6 +217,7 @@
         private System.Windows.Forms.TextBox txtQuebraMax;
         private System.Windows.Forms.Label lblQuebraMax;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnVerTodos;
     }
 }
 
