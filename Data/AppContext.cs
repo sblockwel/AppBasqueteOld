@@ -7,7 +7,7 @@ namespace AppBasquete.Data
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=c:\mydb.db;Version=3;");
+            optionsBuilder.UseSqlite(@"Data Source=D:\mydb.db;");
         }
         public virtual DbSet<Jogo> Jogos { get; set; }
     }
