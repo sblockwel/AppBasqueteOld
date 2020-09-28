@@ -10,9 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppBasquete
+namespace AppBasquete.Forms
 {
-    public partial class FormMain : Form
+    public partial class FormJogo : Form
     {
         public bool ValidarCampos
         {
@@ -51,13 +51,12 @@ namespace AppBasquete
                 return true;
             }
         }
-        public FormMain()
+        public FormJogo()
         {
-
             InitializeComponent();
         }
 
-        private void FormMain_Load(object sender, EventArgs e)
+        private void FormJogo_Load(object sender, EventArgs e)
         {
                     
         }
@@ -86,7 +85,7 @@ namespace AppBasquete
 
         private void btnVerTodos_Click(object sender, EventArgs e)
         {
-            var form = new FormJogos();
+            var form = new FormListaJogos();
             form.Show();
         }
     }

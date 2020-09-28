@@ -1,6 +1,6 @@
-﻿namespace AppBasquete
+﻿namespace AppBasquete.Forms
 {
-    partial class FormMain
+    partial class FormJogo
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -61,7 +61,7 @@
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.ReadOnly = true;
             this.txtNumero.Size = new System.Drawing.Size(65, 23);
-            this.txtNumero.TabIndex = 1;
+            this.txtNumero.TabIndex = 100;
             // 
             // txtPlacar
             // 
@@ -69,7 +69,7 @@
             this.txtPlacar.Location = new System.Drawing.Point(101, 34);
             this.txtPlacar.Name = "txtPlacar";
             this.txtPlacar.Size = new System.Drawing.Size(107, 23);
-            this.txtPlacar.TabIndex = 3;
+            this.txtPlacar.TabIndex = 0;
             // 
             // lblPlacar
             // 
@@ -87,7 +87,7 @@
             this.txtMaxPontos.Location = new System.Drawing.Point(15, 171);
             this.txtMaxPontos.Name = "txtMaxPontos";
             this.txtMaxPontos.Size = new System.Drawing.Size(95, 23);
-            this.txtMaxPontos.TabIndex = 5;
+            this.txtMaxPontos.TabIndex = 2;
             // 
             // lblMinPontos
             // 
@@ -105,7 +105,7 @@
             this.txtMinPontos.Location = new System.Drawing.Point(15, 102);
             this.txtMinPontos.Name = "txtMinPontos";
             this.txtMinPontos.Size = new System.Drawing.Size(95, 23);
-            this.txtMinPontos.TabIndex = 7;
+            this.txtMinPontos.TabIndex = 1;
             // 
             // lblMaxPontos
             // 
@@ -123,7 +123,7 @@
             this.txtQuebraMin.Location = new System.Drawing.Point(15, 237);
             this.txtQuebraMin.Name = "txtQuebraMin";
             this.txtQuebraMin.Size = new System.Drawing.Size(95, 23);
-            this.txtQuebraMin.TabIndex = 11;
+            this.txtQuebraMin.TabIndex = 3;
             // 
             // lblQuebraMin
             // 
@@ -141,7 +141,7 @@
             this.txtQuebraMax.Location = new System.Drawing.Point(15, 306);
             this.txtQuebraMax.Name = "txtQuebraMax";
             this.txtQuebraMax.Size = new System.Drawing.Size(95, 23);
-            this.txtQuebraMax.TabIndex = 9;
+            this.txtQuebraMax.TabIndex = 4;
             // 
             // lblQuebraMax
             // 
@@ -159,7 +159,7 @@
             this.btnAdd.Location = new System.Drawing.Point(353, 306);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(85, 38);
-            this.btnAdd.TabIndex = 12;
+            this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Adicionar";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -175,7 +175,7 @@
             this.btnVerTodos.UseVisualStyleBackColor = true;
             this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
             // 
-            // FormMain
+            // FormJogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,9 +194,9 @@
             this.Controls.Add(this.lblPlacar);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.lblNumero);
-            this.Name = "FormMain";
-            this.Text = "Menu";
-            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.Name = "FormJogo";
+            this.Text = "Cadastro jogo";
+            this.Load += new System.EventHandler(this.FormJogo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
