@@ -15,6 +15,6 @@ namespace AppBasquete.Models
         public int MaximoTemporada { get; set; }
         public int QuebraRecordeMinimo { get; set; }
         public int QuebraRecordeMaximo { get; set; }
-        public Jogador? Jogador { get; set; } 
+        public Jogador Jogador { get; set; } 
     }
 }

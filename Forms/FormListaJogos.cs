@@ -116,5 +116,15 @@ namespace AppBasquete.Forms
             }
             dataJogos.DataSource = query.OrderBy(x => x.Jogador).ThenBy(y => y.Placar).ToList();
         }
+
+        private void dataJogos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataJogos.CurrentRow.DataBoundItem != null)
+            {
+                var jogo = (Jogo)dataJogos.CurrentRow.DataBoundItem;
+                var form = new FormJogo(jogo);
+                form.Show();
+            }
+        }
     }
 }

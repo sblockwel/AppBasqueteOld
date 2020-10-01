@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListaJogos));
             this.dataJogos = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColummNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,11 +70,14 @@
             this.quebraRecordeMinimoDataGridViewTextBoxColumn,
             this.quebraRecordeMaximoDataGridViewTextBoxColumn});
             this.dataJogos.DataSource = this.jogoBindingSource;
-            this.dataJogos.Location = new System.Drawing.Point(0, 28);
+            this.dataJogos.Location = new System.Drawing.Point(12, 28);
+            this.dataJogos.MultiSelect = false;
             this.dataJogos.Name = "dataJogos";
             this.dataJogos.RowHeadersVisible = false;
-            this.dataJogos.Size = new System.Drawing.Size(614, 263);
+            this.dataJogos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataJogos.Size = new System.Drawing.Size(590, 251);
             this.dataJogos.TabIndex = 0;
+            this.dataJogos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataJogos_CellDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -99,14 +103,14 @@
             // minimoTemporadaDataGridViewTextBoxColumn
             // 
             this.minimoTemporadaDataGridViewTextBoxColumn.DataPropertyName = "MinimoTemporada";
-            this.minimoTemporadaDataGridViewTextBoxColumn.HeaderText = "Pontos mín. ";
+            this.minimoTemporadaDataGridViewTextBoxColumn.HeaderText = "Pontos mín. temporada";
             this.minimoTemporadaDataGridViewTextBoxColumn.Name = "minimoTemporadaDataGridViewTextBoxColumn";
             this.minimoTemporadaDataGridViewTextBoxColumn.Width = 90;
             // 
             // maximoTemporadaDataGridViewTextBoxColumn
             // 
             this.maximoTemporadaDataGridViewTextBoxColumn.DataPropertyName = "MaximoTemporada";
-            this.maximoTemporadaDataGridViewTextBoxColumn.HeaderText = "Pontos máx. ";
+            this.maximoTemporadaDataGridViewTextBoxColumn.HeaderText = "Pontos máx. temporada";
             this.maximoTemporadaDataGridViewTextBoxColumn.Name = "maximoTemporadaDataGridViewTextBoxColumn";
             this.maximoTemporadaDataGridViewTextBoxColumn.Width = 90;
             // 
@@ -195,6 +199,7 @@
             this.Controls.Add(this.toolBar);
             this.Controls.Add(this.dataJogos);
             this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormListaJogos";
             this.Text = "Consulta Jogos";
             this.Load += new System.EventHandler(this.FormListaJogos_Load);
@@ -214,6 +219,9 @@
         private System.Windows.Forms.ToolStrip toolBar;
         private System.Windows.Forms.ToolStripTextBox txtPesquisa;
         private System.Windows.Forms.ToolStripLabel lblPesquisa;
+        private System.Windows.Forms.ToolStripComboBox comboPesquisa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ToolStripLabel lblFiltro;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColummNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn placarDataGridViewTextBoxColumn;
@@ -221,8 +229,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn maximoTemporadaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quebraRecordeMinimoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quebraRecordeMaximoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStripComboBox comboPesquisa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.ToolStripLabel lblFiltro;
     }
 }

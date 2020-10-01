@@ -31,5 +31,11 @@ namespace AppBasquete.Forms
         {
             new FormListaJogos().Show();
         }
+
+        private void MenuConsultarJogador_Click(object sender, EventArgs e)
+        {
+            var form = new FormListaJogador();
+               form.Show();
+        }
     }
 }

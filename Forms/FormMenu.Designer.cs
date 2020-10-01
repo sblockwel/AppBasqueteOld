@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuJogador = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuJogo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCadastrarJogador = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuConsultarJogador = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuJogo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCadastrarJogo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsultarJogo = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -45,7 +46,8 @@
             this.menuJogo});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(415, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(484, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,15 +59,6 @@
             this.menuJogador.Name = "menuJogador";
             this.menuJogador.Size = new System.Drawing.Size(61, 20);
             this.menuJogador.Text = "Jogador";
-            // 
-            // menuJogo
-            // 
-            this.menuJogo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCadastrarJogo,
-            this.menuConsultarJogo});
-            this.menuJogo.Name = "menuJogo";
-            this.menuJogo.Size = new System.Drawing.Size(44, 20);
-            this.menuJogo.Text = "Jogo";
             // 
             // menuCadastrarJogador
             // 
@@ -79,27 +72,39 @@
             this.MenuConsultarJogador.Name = "MenuConsultarJogador";
             this.MenuConsultarJogador.Size = new System.Drawing.Size(180, 22);
             this.MenuConsultarJogador.Text = "Consultar Jogador";
+            this.MenuConsultarJogador.Click += new System.EventHandler(this.MenuConsultarJogador_Click);
+            // 
+            // menuJogo
+            // 
+            this.menuJogo.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCadastrarJogo,
+            this.menuConsultarJogo});
+            this.menuJogo.Name = "menuJogo";
+            this.menuJogo.Size = new System.Drawing.Size(44, 20);
+            this.menuJogo.Text = "Jogo";
             // 
             // menuCadastrarJogo
             // 
             this.menuCadastrarJogo.Name = "menuCadastrarJogo";
-            this.menuCadastrarJogo.Size = new System.Drawing.Size(180, 22);
+            this.menuCadastrarJogo.Size = new System.Drawing.Size(153, 22);
             this.menuCadastrarJogo.Text = "Cadastrar Jogo";
             this.menuCadastrarJogo.Click += new System.EventHandler(this.menuCadastrarJogo_Click);
             // 
             // menuConsultarJogo
             // 
             this.menuConsultarJogo.Name = "menuConsultarJogo";
-            this.menuConsultarJogo.Size = new System.Drawing.Size(180, 22);
+            this.menuConsultarJogo.Size = new System.Drawing.Size(153, 22);
             this.menuConsultarJogo.Text = "Consultar Jogo";
             this.menuConsultarJogo.Click += new System.EventHandler(this.menuConsultarJogo_Click);
             // 
             // FormMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(415, 343);
+            this.ClientSize = new System.Drawing.Size(484, 343);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMenu";
             this.Text = "Menu";
             this.menuStrip1.ResumeLayout(false);
